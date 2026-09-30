@@ -10,10 +10,10 @@ function Home() {
       .then((reponse) => reponse.json())
       .then((data) => {
         const meals = data.meals || []; //or 연산자로 넘겨받은 데이터가 있으면 data.meals 사용/없으면 [] 사용
-        const recommendedMeals = meals.filter(
+        /* const recommendedMeals = meals.filter(
           (meal) => meal.recommended === true)
         const firstFour = recommendedMeals.slice(0, 4);
-        setRecs(firstFour);
+        setRecs(firstFour); */
       }).catch((error) => console.log('db.json 로드 실패', error))
   }, [])
 
