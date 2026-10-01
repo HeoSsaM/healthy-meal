@@ -15,7 +15,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/meals' element={<Meals />} />
         <Route path='/tips' element={<Tips />} />
-        <Route path='/' element={<About />} />
+        <Route path='/about' element={<About />} />
       </Routes>
      </main>
      <footer className='site-footer'>
